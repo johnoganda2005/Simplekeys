@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mental Health & Well-being</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #4b5563;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #1f2937;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #2563eb;
+    }
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      border-left: 6px solid #2563eb;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .quote {
+      background-color: #fef9c3;
+      border-left: 5px solid #f59e0b;
+      padding: 15px;
+      font-style: italic;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mental Health & Well-being</h1>
+    <p>Take care of your mind, and it will take care of your success.</p>
+  </header>
+
+   <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>🧠 What is Mental Health?</h2>
+      <p>Mental health is your emotional, psychological, and social well-being. It affects how you think, feel, and act — and how you handle stress and relate to others.</p>
+    </div>
+
+    <div class="section">
+      <h2>💡 Why Mental Health Matters</h2>
+      <p>When your mind is healthy, you make better choices, learn faster, and connect deeply with others. Mental strength builds your success, even in tough times.</p>
+    </div>
+
+    <div class="section">
+      <h2>⚠️ Common Signs of Burnout</h2>
+      <ul>
+        <li>Always tired or overwhelmed</li>
+        <li>Low motivation or energy</li>
+        <li>Sleeping too much or too little</li>
+        <li>Withdrawing from people</li>
+      </ul>
+      <p>If you feel this way often, take time to rest and talk to someone you trust.</p>
+    </div>
+
+    <div class="section">
+      <h2>🌱 Healthy Habits for the Mind</h2>
+      <ul>
+        <li>Get enough sleep (7–9 hrs)</li>
+        <li>Journal your thoughts</li>
+        <li>Talk to someone — don’t hold pain inside</li>
+        <li>Take walks or sit in nature</li>
+        <li>Limit negative social media</li>
+      </ul>
+    </div>
+
+    <div class="quote">
+      “Your mental health is a priority. Your happiness is essential. Your self-care is a necessity.”
+    </div>
+
+  </div>
+
+ <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+</body>
+</html>

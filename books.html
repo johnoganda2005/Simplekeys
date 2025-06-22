@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books to Read</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+      margin: 0;
+    }
+
+    header {
+      background-color: #6d28d9;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #4c1d95;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #6d28d9;
+    }
+
+    .book {
+      background-color: white;
+      border-left: 5px solid #a78bfa;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .quote {
+      background-color: #ede9fe;
+      padding: 15px;
+      font-style: italic;
+      border-left: 5px solid #8b5cf6;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Books to Read</h1>
+    <p>Fuel your mind with wisdom from the world’s best thinkers.</p>
+  </header>
+
+   <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="container">
+
+    <div class="book">
+      <h2>📘 Atomic Habits – James Clear</h2>
+      <p>Learn how tiny daily habits can create big, lasting changes in your life. A guide to building better routines and breaking bad ones.</p>
+    </div>
+
+    <div class="book">
+      <h2>📘 Think and Grow Rich – Napoleon Hill</h2>
+      <p>This classic book teaches how powerful thoughts, belief, and planning lead to wealth and success. A mindset essential.</p>
+    </div>
+
+    <div class="book">
+      <h2>📘 The 7 Habits of Highly Effective People – Stephen R. Covey</h2>
+      <p>Discover the habits that help people become leaders, stay balanced, and live with purpose and discipline.</p>
+    </div>
+
+    <div class="book">
+      <h2>📘 Mindset – Carol S. Dweck</h2>
+      <p>Learn the difference between a fixed mindset and a growth mindset. This book teaches how effort and belief can change your results.</p>
+    </div>
+
+    <div class="book">
+      <h2>📘 Start With Why – Simon Sinek</h2>
+      <p>Great leaders and companies succeed because they know their “why.” This book inspires purpose-driven thinking and action.</p>
+    </div>
+
+    <div class="quote">
+      “The more that you read, the more things you will know. The more you learn, the more places you’ll go.” – Dr. Seuss
+    </div>
+
+  </div>
+
+ <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Feedback</title>
+	<style type="text/css">
+		body{
+			font-family: Segoe UI;
+			background-color: #f4f9FF;
+			margin: 0;
+			padding: 20px;
+			color: #333;
+		}
+		header{
+			background: linear-gradient(to right, #8e44ad, #3498db);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+		}
+		header h1{
+			margin: 0;
+			font-size: 2em;
+			color: aqua;
+		}
+		.feedback-container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+			margin-top: 30px;
+		}
+		.feedback-card{
+			display: flex;
+			align-items: flex-start;
+			background-color: blueviolet;
+			padding: 20px;
+			border: 2px solid black;
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			max-width: 700px;
+			width: 100%;
+			gap: 15px;
+			margin-bottom: 50px;
+		}
+		.feedback-card img{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 2px solid aqua;
+		}
+		.feedback-card h3{
+			margin: 0;
+			color: red;
+		}
+		;feedback-card p{
+			margin: 8px 0 0;
+			font-size: 0.95em;
+			line-height: 1.5;
+		}
+		nav{
+			background-color: RED;
+			margin-bottom: 40px;
+		}
+		
+       nav a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 8px 16px;
+          transition: background 0.3s;
+      }
+       nav a:hover {
+      background: #16a085;
+      border-radius: 5px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+      footer{
+        width: 100%;
+      }
+      header{
+        width: 100%;
+      }
+      feedback-container{
+        width: 100%;
+      }
+      feedback-card{
+        width: 50%;
+      }
+      nav{
+        width: 110%;
+      }
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>what Others Say</h1>
+		<p>Real words from real people who've been inspired. </p>
+	</header>
+	 <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="Feedback-container">
+      <div class="feedback-card">
+        <img src="elen.jpg" alt="User1">
+        <div>
+          <h3>Dr. Elen</h3>
+          <p>I love your initiative in doing this!!! And so well done! Churchill was my husband Dave's most favorite so I love the Quote.  </p>
+        </div>
+      </div>
+    	<div class="feedback-card">
+    		<img src="jos.jpg" alt="User1">
+    		<div>
+    			<h3>Joseph Momanyi</h3>
+    			<p>This website is beautiful. I love the simplicity and the way it speacks to youth directly. Keep it up!   </p>
+    		</div>
+    	</div>
+
+    	<div class="Feedback-container">
+    	  <div class="feedback-card">
+    	  	<img src="brany.jpg" alt="User2">
+    	  <div>
+    	  	<h3>Branice Achieng'</h3>
+    	  	<p>Hey...this is amazing and motivating. I really liked the quote "If you fail you're starting a failure generation into your bloodline" <br>
+    	  	Great job...best of wishes.</p>
+    	  </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+
+

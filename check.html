@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist - John's Life & Success Guide</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef2f3;
+      color: #2c3e50;
+    }
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header h2 {
+      font-size: 1.2em;
+      margin: 10px 0;
+      font-weight: normal;
+    }
+    header p {
+      font-style: italic;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    nav {
+      background: #0072ff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #00c6ff;
+      border-radius: 5px;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: aqua;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0072ff;
+      margin-bottom: 20px;
+    }
+    ol{
+      list-style: none;
+      padding: 0;
+    }
+    ol li{
+      background: lightblue;
+      margin-bottom: 10px;
+      padding: 15px 20px;
+      border-left: 6px solid #00c6ff;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+      }
+      
+    }
+    
+      ol.checklist input[type="checkbox"]{
+        margin-left: 15px;
+        transform: scale(1.2);
+      }
+      blockquote{
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #f5b700;
+        border-left: 5px solid #e63946;
+        font-style: italic;
+      }
+      .button a{
+      background-color: blue;
+      color: white;
+      border-radius: 8px;
+      padding: 10px;
+      margin-left: 100PX;
+      width: 400px;
+      outline: none;
+      border: 2px solid black;
+      text-decoration: none;
+      }
+      .button a:hover{
+        background-color: violet;
+      transition: 1s;
+      }
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    footer {
+      text-align: center;
+      background: #0072ff;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John's Life & Success Guide</h1>
+    <h2>By John Oganda</h2>
+    <p>
+      Every great journey starts with a small, honest step.<br>
+      Focus on growth, not approval.<br>
+      Be disciplined today to enjoy freedom tomorrow.
+    </p>
+  </header>
+
+  <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    <h2>Steps to Success</h2>
+    <ol class="Checklist">
+      <li><input type="checkbox" name="">Define your goals clearly</li>
+      <li><input type="checkbox" name="">Build a postive daily routine</li>click the button bellow to get steps to quide you on how to build a daily routine <br>
+      <br><div class="button"><a href="steps.html">Learn More...</a></div><br>
+      <li><input type="checkbox" name="">Read and learn everyday</li>
+      <li><input type="checkbox" name="">Take care of your health</li>
+      <li><input type="checkbox" name="">Surround yourself with growth-minded people</li>
+      <li><input type="checkbox" name="">Practice gratitude and reflection</li>
+      <li><input type="checkbox" name="">Track your progress weekly</li>
+      <li><input type="checkbox" name="">Embrace challenges and learn from failures</li>
+      <li><input type="checkbox" name="">Give back to others</li>
+      <li><input type="checkbox" name="">Stay focused and avoid distractions</li>
+    </ol>
+    <blockquote>
+      "A goal without a plan is just a wish."<br>-Antoine de Saint-Exupery
+    </blockquote>
+  </main>
+
+  <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+</body>
+</html>

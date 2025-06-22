@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovation & Creative Thinking</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #06d6a0;
+      padding: 12px;
+    }
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #f77f00;
+      margin-top: 30px;
+    }
+
+    .section {
+      background-color: white;
+      border-left: 5px solid #0077b6;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .quote {
+      background-color: #ffe066;
+      padding: 15px;
+      border-left: 5px solid #f77f00;
+      font-style: italic;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0077b6;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Innovation & Creative Thinking</h1>
+    <p>Explore ideas that shape the future — and make yours better.</p>
+  </header>
+
+   <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>💡 What is Innovation?</h2>
+      <p>Innovation means creating new ideas, solving problems in smart ways, and improving how things are done. It doesn’t always mean technology — even a better way to study, live, or help others can be innovative.</p>
+    </div>
+
+    <div class="section">
+      <h2>🚀 Why Innovation Matters</h2>
+      <p>Innovation leads to progress. It helps individuals grow, businesses improve, and societies evolve. Students who think creatively can solve problems better, adapt faster, and stand out in the real world.</p>
+    </div>
+
+    <div class="section">
+      <h2>🧠 How to Think Creatively</h2>
+      <ul>
+        <li>Ask “what if” questions often</li>
+        <li>Use mind maps or brainstorming to explore ideas</li>
+        <li>Challenge rules or assumptions</li>
+        <li>Keep a notebook for ideas or drawings</li>
+        <li>Try new things outside your comfort zone</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🌱 Habits of Innovative People</h2>
+      <ul>
+        <li>Curiosity — they ask questions</li>
+        <li>Risk-taking — they try and fail, then learn</li>
+        <li>Open-mindedness — they welcome new ideas</li>
+        <li>Reflection — they observe and improve</li>
+        <li>Learning — they read, explore, and experiment daily</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📘 Real-Life Innovators</h2>
+      <p>
+        <strong>Elon Musk</strong> – Founded Tesla, SpaceX to transform cars and space.<br>
+        <strong>Steve Jobs</strong> – Changed how we use phones, music, and computers.<br>
+        <strong>Wangari Maathai</strong> – Used simple ideas (tree planting) to create environmental change in Africa.<br>
+        <strong>YOU</strong> – As a student, your small ideas today can lead to big changes tomorrow.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📣 A Personal Note</h2>
+      <p>As a student, I’m constantly learning how to think differently, challenge limits, and try new solutions — that’s how this website began. I hope this page inspires others to do the same.</p>
+      <p>— <strong>John Oganda</strong></p>
+    </div>
+
+    <div class="quote">
+      “Innovation distinguishes between a leader and a follower.”  
+      <br> — Steve Jobs
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 John Oganda | SimpleKeys Success Site
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goals & Vision</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #1e3a8a;
+      padding: 12px;
+    }
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #047857;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      border-left: 5px solid #10b981;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .quote {
+      background-color: #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 15px;
+      font-style: italic;
+      margin: 30px 0;
+      border-radius: 6px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Goals & Vision</h1>
+    <p>"A goal properly set is halfway reached." – Zig Ziglar</p>
+  </header>
+
+   <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>🎯 Why Set Goals?</h2>
+      <p>Goals give life direction. They turn dreams into plans and keep you focused when distractions come. Successful people have clear, written goals and take action daily.</p>
+    </div>
+
+    <div class="section">
+      <h2>📅 Types of Goals</h2>
+      <ul>
+        <li><strong>Short-term:</strong> Daily or weekly actions (e.g., finish an assignment)</li>
+        <li><strong>Mid-term:</strong> Monthly targets (e.g., read 2 books, start a savings habit)</li>
+        <li><strong>Long-term:</strong> 1+ year goals (e.g., graduate with honors, start a business)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>✅ SMART Goals Framework</h2>
+      <p>Make your goals SMART:</p>
+      <ul>
+        <li><strong>S</strong> – Specific</li>
+        <li><strong>M</strong> – Measurable</li>
+        <li><strong>A</strong> – Achievable</li>
+        <li><strong>R</strong> – Relevant</li>
+        <li><strong>T</strong> – Time-bound</li>
+      </ul>
+      <p><em>Example:</em> “I will study for 2 hours daily to improve my exam score by 15% this semester.”</p>
+    </div>
+
+    <div class="section">
+      <h2>🧠 Build Your Vision</h2>
+      <p>A vision is your bigger dream — how you want your future to look. Create a simple vision board (can be on paper or phone) with images, words, or goals that inspire you.</p>
+    </div>
+
+    <div class="section">
+      <h2>🚀 Action Plan</h2>
+      <p>1. Write your top 3 goals for this year<br>
+         2. Break them into monthly steps<br>
+         3. Review your progress weekly<br>
+         4. Adjust and keep growing!</p>
+    </div>
+
+    <div class="quote">
+      “Wasting your time is like burning your own future.”  
+      <br>— John Oganda
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 John Oganda | SimpleKeys for Success
+  </footer>
+
+</body>
+</html>

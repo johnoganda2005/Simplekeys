@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Positive Daily Routine</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #0a192f;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      background: #2980b9;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #27ae60;
+      border-radius: 5px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    }
+
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #ef476f;
+      margin-top: 30px;
+    }
+
+    .section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-left: 5px solid #06d6a0;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .section p {
+      line-height: 1.7;
+    }
+
+    .quote {
+      background-color: #ffe66d;
+      padding: 15px;
+      margin-top: 30px;
+      border-left: 5px solid #f77f00;
+      font-style: italic;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>How to Build a Positive Daily Routine</h1>
+    <p>Shape your day. Shape your destiny.</p>
+  </header>
+
+   <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>1. Start With a Morning Ritual 🌅</h2>
+      <p>Wake up early, drink water, stretch, read something uplifting, and review your goals. A strong morning sets the tone for your whole day.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Plan Your Day 🗒️</h2>
+      <p>Use a simple to-do list. Focus on your top 3 priorities. Avoid multitasking. Block out time for each important task.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Work in Focused Blocks 🎯</h2>
+      <p>Try the Pomodoro Technique — 25 minutes focused work, 5 minutes break. Repeat. Stay away from distractions like social media while working.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Include Learning Time 📖</h2>
+      <p>Read a few pages of a personal growth book or explore articles about your interests. Aim to improve your knowledge daily.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Move Your Body 💪</h2>
+      <p>Exercise or stretch daily. It reduces stress, boosts confidence, and sharpens your mind.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Eat Smart 🍎</h2>
+      <p>Fuel your body with balanced meals. Drink enough water. Avoid too much sugar or fried food that drains your energy.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Reflect in the Evening ✍️</h2>
+      <p>Ask yourself: What went well today? What can I improve? Write down one thing you're grateful for. This builds awareness and gratitude.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Sleep Early 😴</h2>
+      <p>Rest well. Avoid screens 30 minutes before bed. Quality sleep boosts memory and focus.</p>
+    </div>
+
+    <div class="quote">
+      “Winning the morning starts the night before.” <br> — John Oganda
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+
+</body>
+</html>

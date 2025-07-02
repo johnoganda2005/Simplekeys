@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Feedback</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff7ed;
+      color: #78350f;
+      margin: 0;
+    }
+
+    header {
+      background-color: #f97316;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+    }
+    nav {
+      background: #4a00e0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #8e2de2;
+      border-radius: 5px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .testimonial {
+      background-color: white;
+      border-left: 6px solid #f97316;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f97316;
+    }
+
+    footer {
+      background-color: #f97316;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Community Feedback</h1>
+    <p>See what others are saying</p>
+  </header>
+  <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="container">
+    <div class="testimonial">
+      <img src="brany.jpg" alt="User Photo">
+      <div>
+      <p>Hey...this is amazing and motivating. I really liked the quote "If you fail you're starting a failure generation into your bloodline"
+    </p>
+        <strong>– Branice Achieng'</strong>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="elen.jpg" alt="User Photo">
+      <div>
+        <p>I love your initiative in doing this!!! And so well done! Churchill was my husband Dave's most favorite so I love the Quote. </p>
+        <strong>– Dr. Elen</strong>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="jos.jpg" alt="User Photo">
+      <div>
+        <p>This website is beautiful. I love the simplicity and the way it speaks to youth directly. Keep it up!  </p>
+        <strong>– Joseph Gwako</strong>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="Fizzy.jpg" alt="User Photo">
+      <div>
+        <p>Every page gives me hope. I love the books and quotes especially.This site changed how I view my future. Thank you, John!</p>
+        <strong>– Fizzy</strong>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+
+</body>
+</html>

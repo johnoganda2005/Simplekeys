@@ -1,213 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John's Life & Success Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Coming Soon | Empire Innovation</title>
+  <!-- Google Fonts + Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8f9fa;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(145deg, #030712 0%, #0f172a 55%, #111827 100%);
+      color: #eef2ff;
+      line-height: 1.5;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
     }
-    header {
-      background: linear-gradient(to right, #2c3e50, #34495e);
-      color: white;
-      padding: 40px 20px;
+
+    /* decorative ellipse elements (Ellipse 14 / abstract shapes) */
+    .ellipse-bg {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.4;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .ellipse-1 {
+      width: 65vw;
+      height: 65vw;
+      background: radial-gradient(circle, #3b82f6, #a855f7);
+      top: -20vh;
+      left: -25vw;
+    }
+
+    .ellipse-2 {
+      width: 55vw;
+      height: 55vw;
+      background: radial-gradient(circle, #f97316, #ec4899);
+      bottom: -20vh;
+      right: -30vw;
+      opacity: 0.3;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ========== HEADER ========== */
+    .header {
       text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+
+    .coming-soon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.55rem 1.4rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      color: #cbd5e6;
+      margin-bottom: 1.8rem;
+      transition: 0.2s;
     }
-    header h2 {
-      font-size: 1.2em;
-      font-weight: normal;
-      margin-bottom: 15px;
+
+    .coming-soon-badge i {
+      font-size: 0.9rem;
+      color: #facc15;
     }
-    header p {
-      font-style: italic;
-      line-height: 1.6;
+
+    /* main hero titles */
+    .hero-title {
+      font-size: clamp(2.6rem, 8vw, 5rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff, #94a3f8, #c084fc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
     }
-    nav {
-      background: #2c3e50;
+
+    .hero-sub {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      max-width: 680px;
+      margin: 0 auto 1rem;
+      font-weight: 400;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: #cbd5e1;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(4px);
+      padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* ========== MAIN BODY ========== */
+    .main-content {
+      text-align: center;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .countdown-wrapper {
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(12px);
+      border-radius: 3rem;
+      padding: 2rem 1.8rem;
+      margin: 2.5rem auto;
+      max-width: 850px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.4);
+    }
+
+    .timer {
       display: flex;
       justify-content: center;
+      gap: 2rem;
       flex-wrap: wrap;
-      gap: 20px;
-      padding: 15px;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 16px;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: #1abc9c;
-      border-radius: 5px;
-    }
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    .time-block {
+      background: #0f172ad9;
+      min-width: 95px;
+      padding: 1rem 0.8rem;
+      border-radius: 2rem;
       text-align: center;
+      transition: transform 0.2s ease;
+      border: 1px solid #334155;
+      box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
     }
-    nav {
+
+    .time-block:hover {
+      transform: translateY(-5px);
+      border-color: #5b6e8c;
+    }
+
+    .time-number {
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(to bottom, #f1f5f9, #b9c7da);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      line-height: 1;
+      letter-spacing: 2px;
+    }
+
+    .time-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    /* social icons row (horizontal layout) */
+    .social-links {
+      margin: 2.8rem auto 1rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
+      gap: 2.2rem;
       flex-wrap: wrap;
     }
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .nav-links {
-      list-style: none;
+
+    .social-icon {
+      background: rgba(30, 41, 59, 0.7);
+      width: 54px;
+      height: 54px;
       display: flex;
-      gap: 20px !important;
-      margin-right: 23px;
-    }
-    .nav-links li a {
+      align-items: center;
+      justify-content: center;
+      border-radius: 60px;
+      font-size: 1.8rem;
+      color: #e2e8f0;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       text-decoration: none;
-      color: black;
-      font-weight: bold;
-      font-size: 21px;
     }
-    .nav-links li a:hover {
+
+    .social-icon:hover {
+      background: #3b82f6;
       color: white;
-      transition: 0.5s;
+      transform: scale(1.08);
+      border-color: #60a5fa;
+      box-shadow: 0 8px 20px rgba(59,130,246,0.3);
     }
-    .menu-icon {
-      display: none;
+
+    /* ========== FOOTER (contact & link exchange) ========== */
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      text-align: left;
+    }
+
+    .footer-col {
+      flex: 1;
+      min-width: 170px;
+    }
+
+    .footer-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #facc15;
+    }
+
+    .footer-title i {
+      font-size: 1rem;
+      color: #facc15;
+    }
+
+    .footer-text {
+      font-size: 0.9rem;
+      color: #cbd5e6;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-text i {
+      width: 22px;
+      color: #6b86c3;
+    }
+
+    .link-exchange-list {
+      display: flex;
       flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .link-exchange-list a {
+      color: #b9c7da;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+    }
+
+    .link-exchange-list a i {
+      font-size: 0.75rem;
+      color: #7c8eb0;
+    }
+
+    .link-exchange-list a:hover {
+      color: white;
+      transform: translateX(5px);
+    }
+
+    /* copyright & bottom note */
+    .copyright {
+      text-align: center;
+      margin-top: 2.8rem;
+      font-size: 0.75rem;
+      color: #4b556b;
+      letter-spacing: 0.3px;
+    }
+
+    /* responsive */
+    @media (max-width: 780px) {
+      .container {
+        padding: 1.5rem;
+      }
+      .timer {
+        gap: 1rem;
+      }
+      .time-block {
+        min-width: 70px;
+        padding: 0.7rem 0.3rem;
+      }
+      .time-number {
+        font-size: 2rem;
+      }
+      .footer-grid {
+        flex-direction: column;
+        gap: 1.8rem;
+      }
+      .social-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 1.5rem;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .time-block {
+        min-width: 65px;
+      }
+      .time-number {
+        font-size: 1.7rem;
+      }
+      .countdown-wrapper {
+        padding: 1.2rem;
+      }
+    }
+
+    button, a {
       cursor: pointer;
     }
-    .menu-icon div {
-      width: 25px;
-      height: 3px;
-      background-color: black;
-      margin: 4px 0;
-    }
-    #menu-toggle {
-      display: none;
-    }
-    .logo{
-      color: aqua;
-    }
-    .menu-icon {
-        display: flex;
-        margin-right: 40px;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 120%;
-        background-color: lightblue;
-        margin-top: 10px;
-        padding: 10px 0;
 
-      }
-      #menu-toggle:checked + .menu-icon + .nav-links {
-        display: flex;
-        
-      }
-    @media (max-width: 768px) {
-      .menu-icon {
-        display: flex;
-        margin-right: 40px;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 120%;
-        background-color: lightblue;
-        margin-top: 10px;
-        padding: 10px 0;
-
-      }
-      #menu-toggle:checked + .menu-icon + .nav-links {
-        display: flex;
-        
-      }
-      
-    }
-    footer {
-      text-align: center;
-      background: #2c3e50;
-      color: white;
-      padding: 15px;
-      margin-top: 40px;
+    /* highlight contact us extra */
+    .contact-brief {
+      margin-top: 0.8rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <title>SimpleKeys - Success Principles & Life Advice</title>
-<meta name="description" content="SimpleKeys shares motivation, personal growth advice, success principles, and book recommendations to help you achieve your goals.">
-<meta name="keywords" content="success, personal growth, life advice, motivation, mental health, books to read">
-    <title>Success Principles - Personal Growth and Motivation</title>
-<meta name="description" content="A website sharing life advice, success principles, books to read, and mental health guidance.">
-    <h1>John's Life & Success Guide</h1>
-    <h2>By John Oganda</h2>
-    <p>
-      Every great journey starts with a small, honest step.<br>
-      Focus on growth, not approval.<br>
-      Be disciplined today to enjoy freedom tomorrow.
-    </p>
-  </header>
 
-  <nav>
-      <span class="logo">Real Talk With John</span>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-      <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="life.html">Life Guide</a></li>
-    <li><a href="quote.html">Quote</a></li>
-    <li><a href="check.html">Checklist</a></li>
-    <li><a href="mindset.html">Mindset</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="innovation.html">Innovation</a></li>
-    <li><a href="risk.html">Risk Taking</a></li>
-    <li><a href="goals.html">Goals</a></li>
-    <li><a href="mental.html">Mental Health</a></li>
-    <li><a href="books.html">Books to Read</a></li>
-    <li><a href="career.html">Career</a></li>
-    <li><a href="Leadership.html">Leadership</a></li>
-    <li><a href="feed.html">Feedback</a></li>
-    <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- abstract ellipse decorations (Ellipse concept matching design) -->
+  <div class="ellipse-bg ellipse-1"></div>
+  <div class="ellipse-bg ellipse-2"></div>
 
-  <main>
-    <h2>Welcome to My Daily Guide</h2>
-    <p>This platform is here to help you grow mentally, spiritually, and personally. Tap through each section to find inspiration, life principles, and daily tools to keep you disciplined and motivated.</p>
-  </main>
-  <section style="text-align: center; margin-top: 30px;">
-    <img src="my-photo.jpg" alt="John Oganda" style="width: 200px; border-radius: 50%; border: 3px solid aqua;">
-    <h3>John Oganda</h3>
-    <p><em>No matter where you start , you can go far if you stay consistent, stay kind and most importantly belieive in your journey.</em></p>
-  </section>
+  <div class="container">
+    <!-- HEADER SECTION: vertical layout + ellipse badge & "New website coming soon" -->
+    <div class="header">
+      <div class="coming-soon-badge">
+        <i class="fa-regular fa-clock"></i>
+        <span>✨ New website coming soon ✨</span>
+      </div>
+      <h1 class="hero-title">Our Website Is Coming Soon</h1>
+      <div class="hero-sub">
+        The future of digital excellence is almost here.
+      </div>
+      <div class="hero-desc">
+        <i class="fa-regular fa-message"></i> You will find the latest information about our company here. 
+        Stay tuned for groundbreaking updates.
+      </div>
+    </div>
 
-  <footer>
-    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
-  </footer>
+    <!-- BODY SECTION: main text, countdown, social icons -->
+    <div class="main-content">
+      <!-- double info text from description: you will find latest info... -->
+      <p style="color: #cbd5e6; max-width: 700px; margin: 0.5rem auto; font-size: 0.95rem; background: rgba(0,0,0,0.2); padding: 0.6rem 1.2rem; border-radius: 30px;">
+        <i class="fa-regular fa-bell"></i> You will find the latest information about our company here. 
+        You will find the latest information about our company here.
+      </p>
+
+      <!-- COUNTDOWN TIMER -->
+      <div class="countdown-wrapper">
+        <div class="timer" id="countdownTimer">
+          <div class="time-block">
+            <div class="time-number" id="days">00</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-block">
+            <div class="time-number" id="hours">00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-block">
+            <div class="time-number" id="minutes">00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-block">
+            <div class="time-number" id="seconds">00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.8rem; color: #8192b0;"><i class="fa-regular fa-calendar-alt"></i> Launch target: July 15, 2026</p>
+      </div>
+
+      <!-- SOCIAL LINKS: twitter-x, facebook-f, instagram, linkedin (Horizontal layout) -->
+      <div class="social-links">
+        <a href="#" class="social-icon" target="_blank" aria-label="Twitter X"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-icon" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION: Horizontal layout with Contact us, Address, Phone, Link Exchange -->
+    <div class="footer">
+      <div class="footer-grid">
+        <!-- Contact us column -->
+        <div class="footer-col">
+          <div class="footer-title">
+            <i class="fa-regular fa-envelope"></i> Contact us
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-paper-plane"></i> hello@empireinnovate.com
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-clock"></i> Mon–Fri: 9AM–6PM EST
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-comment"></i> Live chat (soon)
+          </div>
+        </div>
+
+        <!-- Address: Empire State Building location -->
+        <div class="footer-col">
+          <div class="footer-title">
+            <i class="fa-solid fa-location-dot"></i> Address
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-building"></i> Empire State Building
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-map"></i> 350 5th Ave, New York, NY 10118
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-globe"></i> United States
+          </div>
+        </div>
+
+        <!-- Phone number column -->
+        <div class="footer-col">
+          <div class="footer-title">
+            <i class="fa-solid fa-phone"></i> Phone
+          </div>
+          <div class="footer-text">
+            <i class="fa-solid fa-phone-flip"></i> +1 212 730 1234
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-fax"></i> +1 212 730 6789 (Fax)
+          </div>
+          <div class="footer-text">
+            <i class="fa-regular fa-mobile"></i> Support hotline soon
+          </div>
+        </div>
+
+        <!-- Link Exchange column: external partners or resource links -->
+        <div class="footer-col">
+          <div class="footer-title">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i> Link Exchange
+          </div>
+          <div class="link-exchange-list">
+            <a href="#"><i class="fa-regular fa-circle-right"></i> Tech Innovators Hub</a>
+            <a href="#"><i class="fa-regular fa-circle-right"></i> Digital Future Alliance</a>
+            <a href="#"><i class="fa-regular fa-circle-right"></i> Creative Resource Library</a>
+            <a href="#"><i class="fa-regular fa-circle-right"></i> Startup Ecosystem</a>
+            <a href="#"><i class="fa-regular fa-circle-right"></i> Empire Partners Network</a>
+          </div>
+        </div>
+      </div>
+      <!-- tiny copyright (optional but clean) -->
+      <div class="copyright">
+        <span>© 2026 Empire Innovation • All visions reserved. Launching soon with cutting-edge solutions.</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Countdown timer – target date set to July 15, 2026, 00:00:00
+    // You can modify this date easily: year, month(0-indexed), day, hour, minute
+    const targetDate = new Date(2026, 6, 15, 0, 0, 0); // July 15, 2026
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate.getTime() - now;
+
+      if (distance < 0) {
+        // Countdown expired: show launch message
+        document.getElementById('days').innerHTML = '00';
+        document.getElementById('hours').innerHTML = '00';
+        document.getElementById('minutes').innerHTML = '00';
+        document.getElementById('seconds').innerHTML = '00';
+        const timerContainer = document.querySelector('.countdown-wrapper');
+        if (timerContainer && !timerContainer.querySelector('.launched-message')) {
+          const launchMsg = document.createElement('p');
+          launchMsg.className = 'launched-message';
+          launchMsg.style.marginTop = '1rem';
+          launchMsg.style.fontWeight = '600';
+          launchMsg.style.color = '#facc15';
+          launchMsg.innerHTML = '<i class="fa-regular fa-party-horn"></i> We’re LIVE! The website has launched. Stay connected.';
+          timerContainer.appendChild(launchMsg);
+        }
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerHTML = days < 10 ? '0' + days : days;
+      document.getElementById('hours').innerHTML = hours < 10 ? '0' + hours : hours;
+      document.getElementById('minutes').innerHTML = minutes < 10 ? '0' + minutes : minutes;
+      document.getElementById('seconds').innerHTML = seconds < 10 ? '0' + seconds : seconds;
+    }
+
+    // initial call
+    updateCountdown();
+    // update every second
+    const interval = setInterval(updateCountdown, 1000);
+    
+    // optional: clear interval if page gets destroyed (good practice)
+    window.addEventListener('beforeunload', () => clearInterval(interval));
+  </script>
 </body>
 </html>
-
-

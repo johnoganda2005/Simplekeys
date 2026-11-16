@@ -450,6 +450,7 @@
 
 
   </style>
+  
 
 
 </head>
@@ -480,6 +481,9 @@
 
 
     </p>
+        <link rel="manifest" href="/Simplekeys/manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="apple-touch-icon" href="/Simplekeys/my-photo.jpg">
 
 
   </header>
@@ -606,6 +610,13 @@
 
 
   </footer>
+      <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/Simplekeys/service-worker.js');
+        });
+      }
+    </script>
 
 
 </body>

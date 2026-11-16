@@ -1,0 +1,23 @@
+{
+  "name": "Simplekeys",
+  "short_name": "Simplekeys",
+  "start_url": "/Simplekeys/index.html",
+  "scope": "/Simplekeys/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "icons": [
+    {
+      "src": "my-photo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "my-photo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
